@@ -1,0 +1,99 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    margin: 1em;
+}
+h1 span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+h1 span.focused:after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+}
+@-webkit-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.noun {
+    color: #3498db;
+}
+.desire {
+    color: #16a085;
+}
+.action {
+    color: #8e44ad;
+}
+.condition {
+    color: #27ae60;
+}
+.reason {
+    color: #e74c3c;
+}
+a.copy {
+    font-size: 1.2em;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #2ecc71;
+    margin: 1em;
+    padding: 0.5em 1.5em;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.3);
+    text-shadow: -1px -1px 0 #27ae60;
+}
+.message {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: #7f8c8d;
+    text-transform: uppercase;
+}
+input {
+    opacity: 0;
+    position: absolute;
+}
+@media (min-width: 600px) {
+    .message {
+        font-size: 1.5em;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    a.copy {
+        font-size: 2em;
+    }
+}
+@media (min-width: 1200px) {
+    .message {
+        font-size: 2em;
+    }
+    h1 {
+        font-size: 4em;
+    }
+    a.copy {
+        font-size: 2.5em;
+    }
+}

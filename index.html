@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>An easy to use User Story generator.</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700|Montserrat:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <p class="message">Click one of the underlined </p>
+        <h1 class="story">As a <span class="noun" data-input="noun-input" data-message="The subject, a noun e.g. User, Logged In User, Free User, Paid User, Administrator, Developer, etc.">User</span> <span class="desire" data-input="desire-input" data-message="I want to, I do not want to, I should be able to, I should not be able to, etc.">I want to</span> <span class="action" data-input="action-input" data-message="What you would like or not like to accomplish">do a thing</span> <span class="condition" data-input="condition-input" data-message="Qualifier e.g. so that, because, in order to, etc.">so that</span> <span class="reason" data-input="reason-input" data-message="The reason you want or don't want the action you typed">I can be a happy user</span>.</h1>
+        <input type="text" class="noun-input" data-textfield="noun" />
+        <input type="text" class="desire-input" data-textfield="desire" />
+        <input type="text" class="action-input" data-textfield="action" />
+        <input type="text" class="condition-input" data-textfield="condition" />
+        <input type="text" class="reason-input" data-textfield="reason" />
+        <a class="copy" href="#">copy</a>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.3.2/sweetalert2.min.css">
+        <script src="https://cdn.jsdelivr.net/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/sweetalert2/6.3.2/sweetalert2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.16/clipboard.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
